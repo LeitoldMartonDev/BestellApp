@@ -4,3 +4,16 @@ header{
     display: flex;
     justify-content: space-between;
 }
+
+footer{
+    background-color: rgb(255, 217, 0);
+    min-height: 100px;
+    max-height: 300px;
+    
+   
+}
+
+.header_img {
+    max-width: 200px;
+    padding: 30px;
+}
