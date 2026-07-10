@@ -12,3 +12,13 @@ button {
   margin: 5px;
   cursor: pointer;
 }
+
+.rule_1440 {
+  margin-inline: auto;
+  max-width: 1440px;
+}
+
+.centering {
+  display: flex;
+  justify-content: center;
+}
