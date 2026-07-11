@@ -18,7 +18,16 @@ button {
   max-width: 1440px;
 }
 
-.centering {
+.center_hor {
   display: flex;
   justify-content: center;
+}
+
+.center_ver {
+  display: flex;
+  align-items: center;
+}
+
+.red {
+  background-color: red;
 }
