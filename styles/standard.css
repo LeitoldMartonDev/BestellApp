@@ -28,6 +28,21 @@ button {
   align-items: center;
 }
 
-.red {
-  background-color: red;
+.theme_colour {
+  background-color: rgb(221, 83, 37);
+}
+
+.text {
+  font-size: 20px;
+}
+.margin10 {
+  margin: 10px;
+}
+
+.description {
+  font-style: italic;
+}
+
+.title {
+  font-weight: bold;
 }
