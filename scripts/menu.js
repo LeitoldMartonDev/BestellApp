@@ -71,7 +71,7 @@ let salad = [
     price: 3,
     description:
       "Hausgemachter gemischter Salat ist eine frische, lebendige Beilage aus einer Auswahl sorgfältig gewählter Blattsalate und saisonaler Gemüse, die oft mit einem leichtem Essig-Öl-Dressing serviert wird.",
-    picture_url: "../assets/img/Gemisch.Salat.png",
+    picture_url: "../assets/img/Gemisch_Salat.png",
   },
 
   {

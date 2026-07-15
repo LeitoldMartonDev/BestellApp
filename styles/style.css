@@ -61,6 +61,10 @@ header {
   font-size: 25px;
 }
 
+.menu_img {
+  max-width: 200px;
+}
+
 footer {
   min-height: 100px;
   max-height: 300px;
