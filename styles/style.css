@@ -54,15 +54,42 @@ header {
 
 .menupic {
   max-width: 190px;
+  
 }
 
 .menu_title {
   margin-left: 30px;
   font-size: 25px;
 }
+.the_menu{
+  background-color: chocolate;
+  padding: 20px;
+  gap: 15px;
+  border-style: double;
+  display: flex;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
 
 .menu_img {
   max-width: 200px;
+  border-style: double;
+}
+
+.title_and_description{
+flex-grow: 1;
+ 
+}
+
+.price_and_button{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu_description{
+ max-width: 800px;
+
 }
 
 footer {

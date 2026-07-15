@@ -4,12 +4,28 @@ function renderSoup() {
   for (let i = 0; i < soup.length; i++) {
     let everySoup = soup[i];
     soupDiv.innerHTML += `
-    <div>
-<b>name:</b> ${everySoup.name}  <br>
-<img class="menu_img" src="${everySoup.picture_url}  " alt="${everySoup.name}  "><br>
-<b>price:</b> ${everySoup.price} € <br>
-<b>description:</b> ${everySoup.description}  <br>
-</div>
+
+
+<article class="the_menu rule_1440" role="listing the menu">
+      <img class="menu_img" src="${everySoup.picture_url}" alt="${everySoup.name}">
+      <div class="title_and_description">
+
+        <div class="title">
+          ${everySoup.name}
+        </div>
+        <div class="description menu_description">
+          ${everySoup.description}
+        </div>
+      </div>
+
+      <div class="price_and_button">
+        <div class="title">
+         Price: ${everySoup.price} €
+        </div>
+        <button type="">Add to Basket</button>          
+      </div>
+    </article>
+
 `;
   }
 }
