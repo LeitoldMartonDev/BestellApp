@@ -23,6 +23,7 @@ header {
 .logo {
   position: relative;
   top: -150px;
+  margin-bottom: -150px;
   max-width: 250px;
   border-radius: 50%;
   border-style: solid;
