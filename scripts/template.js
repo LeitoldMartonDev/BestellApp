@@ -31,11 +31,11 @@ function render() {
           <div class="title rating_box rating">
             4,5
           </div>
-          <div class="rating_box voter_ndiv
+          <div class="rating_box voter_no"> 
             (1256)
-          </aside>
-        </aside>
-      </aside>
+          </div>
+        </div>
+      </div>
       <div class="center_hor text description">The optimalizied food delivery for programmers.</div>
     </section>
 
