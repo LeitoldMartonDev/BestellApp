@@ -2,6 +2,20 @@ function render() {
   let body = document.getElementById("main-body");
   body.innerHTML = "";
   body.innerHTML += `
+
+       <section class="basket" id="basket" role="Checkout Basket">
+
+   <div>
+   Dish one costs 13 EUR <br>
+    Dish two cost 15 EUR <br>
+    Delivery 3 EUR <br>
+    <h2>TOTAL 31 EUR</h2>
+    <button> Check out </button>
+    </div>
+
+    
+    </section>
+
 <header class="theme_colour">
 
       <div class="header_box rule_1440">
@@ -12,7 +26,7 @@ function render() {
     </header>
 
 <main>
-    <div class="center_hor">
+    <div role="fixing the background image and the logo" class="center_hor">
 
       <img class="background rule_1440" src="./assets/img/Background.jpg" alt="Background image">
     </div>
@@ -76,7 +90,11 @@ function render() {
     <article  id="saladMenu">
     </article>
 
+   
+
   </main>
+  
+
   <footer class="theme_colour">
     Copyright: 2026 The Coder's Dish - Impressum - Cookie Preferences
   </footer>

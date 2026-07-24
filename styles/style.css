@@ -92,6 +92,21 @@ flex-grow: 1;
 
 }
 
+.basket{
+position: sticky;
+display: flex;
+justify-content: end;
+z-index: 1;
+top: 50px;
+bottom: 50px;
+margin-left: 75%;
+padding: 10px;
+background-color: black;
+border-style: double;
+color:aliceblue;
+
+}
+
 footer {
   min-height: 100px;
   max-height: 300px;
