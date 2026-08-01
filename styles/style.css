@@ -54,14 +54,13 @@ header {
 
 .menupic {
   max-width: 190px;
-  
 }
 
 .menu_title {
   margin-left: 30px;
   font-size: 25px;
 }
-.the_menu{
+.the_menu {
   background-color: chocolate;
   padding: 20px;
   gap: 15px;
@@ -76,35 +75,36 @@ header {
   border-style: double;
 }
 
-.title_and_description{
-flex-grow: 1;
- 
+.title_and_description {
+  flex-grow: 1;
 }
 
-.price_and_button{
+.price_and_button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.menu_description{
- max-width: 800px;
-
+.menu_description {
+  max-width: 800px;
 }
 
-.basket{
-position: sticky;
-display: flex;
-justify-content: end;
-z-index: 1;
-top: 50px;
-bottom: 50px;
-margin-left: 75%;
-padding: 10px;
-background-color: black;
-border-style: double;
-color:aliceblue;
+.basket {
+  position: fixed;
+  display: flex;
+  justify-content: end;
+  z-index: 1;
+  top: 200px;
+  bottom: 150px;
+  margin-left: 75%;
+  padding: 10px;
+  background-color: black;
+  border-style: double;
+  color: aliceblue;
+}
 
+.basket_out {
+  margin-left: 100%;
 }
 
 footer {
