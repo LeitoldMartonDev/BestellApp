@@ -5,13 +5,14 @@ function render() {
 
        <section class="basket" id="basket" role="Checkout Basket">
 
-   <div>
+   <div id=basket_items role="Listing your basket items">
    Dish one costs 13 EUR <br>
     Dish two cost 15 EUR <br>
-    Delivery 3 EUR <br>
-    <h2>TOTAL 31 EUR</h2>
-    <button> Check out </button>
     </div>
+    <div role="delivery fee" >Delivery 3 EUR  </div>
+    <h2 id="Total" role="Showing the total amount to pay">TOTAL 31 EUR</h2>
+    <button id="Checkout"> Check out </button>
+    
 
     
     </section>

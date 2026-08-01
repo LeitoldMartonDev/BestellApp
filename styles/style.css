@@ -89,24 +89,6 @@ header {
   max-width: 800px;
 }
 
-.basket {
-  position: fixed;
-  display: flex;
-  justify-content: end;
-  z-index: 1;
-  top: 200px;
-  bottom: 150px;
-  margin-left: 75%;
-  padding: 10px;
-  background-color: black;
-  border-style: double;
-  color: aliceblue;
-}
-
-.basket_out {
-  margin-left: 100%;
-}
-
 footer {
   min-height: 100px;
   max-height: 300px;
