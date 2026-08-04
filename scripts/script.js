@@ -4,3 +4,14 @@ function init() {
   renderMain();
   renderSalad();
 }
+
+function addBasket(){
+
+
+  let myBasket = document.getElementById("basket_items");
+  myBasket.innerHTML = "";
+  myBasket.innerHTML += `
+  ALMA 
+  `
+
+}

@@ -5,7 +5,7 @@ function render() {
 
        <section class="basket" id="basket" role="Checkout Basket">
 
-   <div id=basket_items role="Listing your basket items">
+   <div id="basket_items" role="Listing your basket items">
    Dish one costs 13 EUR <br>
     Dish two cost 15 EUR <br>
     </div>
@@ -129,7 +129,7 @@ function renderSoup() {
         <div class="title">
          Price: ${everySoup.price} €
         </div>
-        <button type="">Add to Basket</button>          
+        <button onclick="addBasket()" id="add_to_basket">Add to Basket</button>          
       </div>
     </article>
 
@@ -160,7 +160,7 @@ function renderMain() {
         <div class="title">
          Price: ${everyMain.price} €
         </div>
-        <button type="">Add to Basket</button>          
+        <button onclick="addBasket()" id="add_to_basket">Add to Basket</button>          
       </div>
     </article>
 `;
@@ -189,7 +189,7 @@ function renderSalad() {
         <div class="title">
          Price: ${everySalad.price} €
         </div>
-        <button type="">Add to Basket</button>          
+        <button onclick="addBasket()" id="add_to_basket">Add to Basket</button>          
       </div>
     </article>
 </div>
