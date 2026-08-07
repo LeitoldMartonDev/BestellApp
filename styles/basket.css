@@ -4,9 +4,9 @@
   flex-direction: column;
   justify-content: space-between;
   z-index: 1;
-  top: 10%;
-  margin-bottom: -100px;
-  margin-left: 80%;
+  top: 100px;
+  margin-top: 100px;
+  margin-bottom: -300px;
   padding: 10px;
   background-color: black;
   border-style: double;
@@ -17,4 +17,9 @@
 
 .basket_out {
   margin-left: 100%;
+  transition: margin-left 0.3s ease;
+}
+.basket_in {
+  margin-left: 80%;
+  transition: margin-left 0.3s ease;
 }

@@ -49,7 +49,7 @@ function render() {
     </div>
   </section>
 
-  <section class="basket" id="basket" role="Checkout Basket">
+  <section class="basket basket_out" id="basket" role="Checkout Basket">
     <div id="basket_items" role="Listing your basket items">
       Dish one costs 13 EUR <br />
       Dish two cost 15 EUR <br />
@@ -100,7 +100,7 @@ function render() {
 </main>
 
 <footer class="theme_colour">
-  Copyright: 2026 The Coder's Dish - Impressum - Cookie Preferences
+  Copyright: 2026 The Coder's Dish - Márton Leitold - Impressum - Cookie Preferences
 </footer>
 `;
 }

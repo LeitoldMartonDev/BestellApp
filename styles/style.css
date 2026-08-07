@@ -92,6 +92,7 @@ header {
 }
 
 footer {
+  margin-top: 100px;
   min-height: 100px;
   max-height: 300px;
   display: flex;
