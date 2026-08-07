@@ -48,8 +48,8 @@ header {
 
 .menudivider {
   max-height: 90px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 0px;
+  margin-bottom:100px;
 }
 
 .menupic {
@@ -60,6 +60,8 @@ header {
   margin-left: 30px;
   font-size: 25px;
 }
+
+
 .the_menu {
   background-color: chocolate;
   padding: 20px;

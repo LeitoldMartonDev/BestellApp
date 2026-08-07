@@ -1,16 +1,18 @@
 .basket {
-  position: fixed;
+  position: sticky;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   z-index: 1;
-  top: 200px;
-  bottom: 150px;
-  margin-left: 75%;
+  top: 10%;
+  margin-bottom: -100px;
+  margin-left: 80%;
   padding: 10px;
   background-color: black;
   border-style: double;
   color: aliceblue;
+  max-height: 300px;
+  overflow-y: auto;
 }
 
 .basket_out {

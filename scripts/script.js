@@ -11,7 +11,7 @@ function addBasket(){
   let myBasket = document.getElementById("basket_items");
   myBasket.innerHTML = "";
   myBasket.innerHTML += `
-  TEST 
+  TEST <br> TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>
   `
 
 }
