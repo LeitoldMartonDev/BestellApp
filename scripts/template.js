@@ -51,12 +51,11 @@ function render() {
 
   <section class="basket basket_out" id="basket" role="Checkout Basket">
     <div id="basket_items" role="Listing your basket items">
-      Dish one costs 13 EUR <br />
-      Dish two cost 15 EUR <br />
+    <div></div>
     </div>
     <div role="delivery fee">Delivery 3 EUR</div>
-    <h2 id="Total" role="Showing the total amount to pay">TOTAL 31 EUR</h2>
-    <button id="Checkout">Check out</button>
+    <h2 id="Total" role="Showing the total amount to pay">TOTAL: ( Delivery+ listed elements)  EUR</h2>
+    <button id="Checkout">Check out (delete allbasket+adds picture)</button>
   </section>
 
   <section class="menudivider theme_colour" role="soup divider">
@@ -129,7 +128,7 @@ function renderSoup() {
         <div class="title">
          Price: ${everySoup.price} €
         </div>
-        <button onclick="addBasket()" id="add_to_basket">Add to Basket</button>          
+        <button onclick="addBasket(${i})" id="add_to_basket">Add to Basket</button>          
       </div>
     </article>
 

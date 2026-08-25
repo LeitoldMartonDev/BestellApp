@@ -5,17 +5,19 @@ function init() {
   renderSalad();
 }
 
-function addBasket() {
-  addElements();
+function addBasket(index) {
+  console.log("1st round OK");
+  addElements(index);
   basketMove();
 }
 
-function addElements() {
-  let myBasket = document.getElementById("basket_items");
-  myBasket.innerHTML = "";
-  myBasket.innerHTML += `
-  TEST <br> TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>TEST <br>
-  `;
+function addElements(i) {
+
+let etel = soup[i];
+  console.log(etel.name);
+  console.log(etel.price);
+ 
+
 }
 
 function basketMove() {

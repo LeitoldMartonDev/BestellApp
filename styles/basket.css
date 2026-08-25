@@ -7,12 +7,14 @@
   top: 100px;
   margin-top: 100px;
   margin-bottom: -300px;
+  margin-left: 80%;
   padding: 10px;
-  background-color: black;
+  background-color: rgb(172, 160, 55);
   border-style: double;
   color: aliceblue;
   max-height: 300px;
   overflow-y: auto;
+
 }
 
 .basket_out {
