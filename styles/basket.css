@@ -25,3 +25,8 @@
   margin-left: 80%;
   transition: margin-left 0.3s ease;
 }
+
+.basket_item{
+  border-style: dotted;
+  background-color: blueviolet;
+}

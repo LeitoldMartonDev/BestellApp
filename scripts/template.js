@@ -51,7 +51,6 @@ function render() {
 
   <section class="basket basket_out" id="basket" role="Checkout Basket">
     <div id="basket_items" role="Listing your basket items">
-    <div></div>
     </div>
     <div role="delivery fee">Delivery 3 EUR</div>
     <h2 id="Total" role="Showing the total amount to pay">TOTAL: ( Delivery+ listed elements)  EUR</h2>
