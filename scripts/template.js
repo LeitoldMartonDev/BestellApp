@@ -49,6 +49,7 @@ function render() {
     </div>
   </section>
 
+
   <section class="basket basket_out" id="basket" role="Checkout Basket">
     <div id="basket_items" role="Listing your basket items">
     </div>
@@ -56,6 +57,7 @@ function render() {
     <h2 id="Total" role="Showing the total amount to pay">TOTAL: ( Delivery+ listed elements)  EUR</h2>
     <button id="Checkout">Check out (delete allbasket+adds picture)</button>
   </section>
+  
 
   <section class="menudivider theme_colour" role="soup divider">
     <div class="menudivider center_ver rule_1440 content_width">
@@ -103,94 +105,112 @@ function render() {
 `;
 }
 
-function renderSoup() {
-  let soupDiv = document.getElementById("soupMenu");
-  soupDiv.innerHTML = "";
-  for (let i = 0; i < soup.length; i++) {
-    let everySoup = soup[i];
-    soupDiv.innerHTML += `
+function renderDishes() {
+  let SoupDiv = document.getElementById("soupMenu");
+let MainDiv = document.getElementById("mainMenu");
+let SaladDiv = document.getElementById("saladMenu");
+
+  SoupDiv.innerHTML = "";
+  MainDiv.innerHTML = "";
+  SaladDiv.innerHTML = "";
+  for (let dish of dishes) {
+    if (dish.type === "Soup") {
+
+      
+        SoupDiv.innerHTML += `
 
 
       <article  class="the_menu rule_1440" role="listing the menu">
-      <img class="menu_img" src="${everySoup.picture_url}" alt="${everySoup.name}">
+      <img class="menu_img" src="${dish.picture_url}" alt="${dish.name}">
       <div class="title_and_description">
 
         <div class="title">
-          ${everySoup.name}
+          ${dish.name}
         </div>
         <div class="description menu_description">
-          ${everySoup.description}
+          ${dish.description}
         </div>
       </div>
 
       <div class="price_and_button">
         <div class="title">
-         Price: ${everySoup.price} €
+         Price: ${dish.price} €
         </div>
-        <button onclick="addBasket(${i})" id="add_to_basket">Add to Basket</button>          
+        <button onclick="addBasket()" id="add_to_basket">Add to Basket</button>          
       </div>
     </article>
-
-`;
-  }
-}
-
-function renderMain() {
-  let mainDiv = document.getElementById("mainMenu");
-  mainDiv.innerHTML = "";
-  for (let i = 0; i < maincourse.length; i++) {
-    let everyMain = maincourse[i];
-    mainDiv.innerHTML += `
     
-<article class="the_menu rule_1440" role="listing the menu">
-      <img class="menu_img" src="${everyMain.picture_url}" alt="${everyMain.name}">
+
+`;
+      
+    }
+
+    if (dish.type === "Maincourse") {
+
+      
+        MainDiv.innerHTML += `
+
+
+      <article  class="the_menu rule_1440" role="listing the menu">
+      <img class="menu_img" src="${dish.picture_url}" alt="${dish.name}">
       <div class="title_and_description">
 
         <div class="title">
-          ${everyMain.name}
+          ${dish.name}
         </div>
         <div class="description menu_description">
-          ${everyMain.description}
+          ${dish.description}
         </div>
       </div>
 
       <div class="price_and_button">
         <div class="title">
-         Price: ${everyMain.price} €
+         Price: ${dish.price} €
         </div>
         <button onclick="addBasket()" id="add_to_basket">Add to Basket</button>          
       </div>
     </article>
-`;
-  }
-}
+    
 
-function renderSalad() {
-  let saladDiv = document.getElementById("saladMenu");
-  saladDiv.innerHTML = "";
-  for (let i = 0; i < salad.length; i++) {
-    let everySalad = salad[i];
-    saladDiv.innerHTML += `
-    <article class="the_menu rule_1440" role="listing the menu">
-      <img class="menu_img" src="${everySalad.picture_url}" alt="${everySalad.name}">
+`;
+      
+    }
+
+    if (dish.type === "Salad") {
+
+      
+        SaladDiv.innerHTML += `
+
+
+      <article  class="the_menu rule_1440" role="listing the menu">
+      <img class="menu_img" src="${dish.picture_url}" alt="${dish.name}">
       <div class="title_and_description">
 
         <div class="title">
-          ${everySalad.name}
+          ${dish.name}
         </div>
         <div class="description menu_description">
-          ${everySalad.description}
+          ${dish.description}
         </div>
       </div>
 
       <div class="price_and_button">
         <div class="title">
-         Price: ${everySalad.price} €
+         Price: ${dish.price} €
         </div>
         <button onclick="addBasket()" id="add_to_basket">Add to Basket</button>          
       </div>
     </article>
-</div>
+    
+
 `;
+      
+    }
+
+
+
+
+
+
   }
 }
