@@ -4,16 +4,15 @@ function init() {
 }
 
 function addBasket(index) {
-  addElements(index);
-  basketMove();
+  console.log(index);
+  //addElements(index);
+  //basketMove();
 }
 
 function addElements(i) {
-
- 
   addedButton();
 
-  let etel = soup[i];
+  let etel = dishes[i];
   console.log(etel.name);
   console.log(etel.price);
 
@@ -29,10 +28,10 @@ function addElements(i) {
   `;
 }
 
-function basketMove() {
-  document.getElementById("basket")
-    .classList.replace("basket_out", "basket_in");
-}
+//function basketMove() {
+//document.getElementById("basket")
+//.classList.replace("basket_out", "basket_in");
+//}
 
 function addedButton() {
   let item = document.getElementById("add_to_basket");
@@ -41,6 +40,4 @@ function addedButton() {
   item.innerHTML += `
   Added
   `;
-
-
 }
