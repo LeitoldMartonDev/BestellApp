@@ -50,7 +50,7 @@ function render() {
   </section>
 
 
-  <section class="basket basket_in" id="basket" role="Checkout Basket">
+  <section class="basket basket_out" id="basket" role="Checkout Basket">
     <div id="basket_items" role="Listing your basket items">
     </div>
     <div role="delivery fee">Delivery 3 EUR</div>
@@ -134,7 +134,7 @@ function renderDishes() {
         <div class="title">
          Price: ${dish.price} €
         </div>
-        <button onclick='addBasket(${JSON.stringify(dish)})' id="add_to_basket">Add to Basket</button>          
+        <button onclick='addBasket(${JSON.stringify(dish)})' id="addButton${dish.name}" >Add to Basket</button>          
       </div>
     </article>
     
@@ -162,7 +162,7 @@ function renderDishes() {
         <div class="title">
          Price: ${dish.price} €
         </div>
-        <button onclick='addBasket(${JSON.stringify(dish)})' id="add_to_basket">Add to Basket</button>          
+        <button onclick='addBasket(${JSON.stringify(dish)})' id="addButton${dish.name}"  >Add to Basket</button>          
       </div>
     </article>
     
@@ -190,7 +190,7 @@ function renderDishes() {
         <div class="title">
          Price: ${dish.price} €
         </div>
-        <button onclick='addBasket(${JSON.stringify(dish)})' id="add_to_basket">Add to Basket</button>          
+        <button onclick='addBasket(${JSON.stringify(dish)})' id="addButton${dish.name}"  >Add to Basket</button>          
       </div>
     </article>
     
