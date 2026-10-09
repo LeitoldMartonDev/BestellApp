@@ -11,9 +11,6 @@ function addBasket(index) {
 function addElements(i) {
   addedButton(i);
 
-  console.log(i.name);
-  console.log(i.price);
-
   let container = document.getElementById("basket_items");
 
   container.innerHTML += `
