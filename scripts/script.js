@@ -16,9 +16,11 @@ function addElements(i) {
   container.innerHTML += `
 
   <div class="basket_item">
-  ${i.name} ${i.price}
 
-  <button type="">+1</button><button type="">DUMP</button>
+  <div class="test" id="basketcounter${i.name}">1</div> <div>portion</div> ${i.name} <div>€</div><div class="test" id="basketprice${i.name}">${i.price}</div>
+   
+
+  <button onclick='buttonAdd(${JSON.stringify(i)})'>+1</button><button>DUMP</button>
   </div>
   `;
 }
@@ -38,3 +40,19 @@ function addedButton(i) {
   `;
   button.disabled = true;
 }
+
+function buttonAdd(i) {
+  let counter = document.getElementById("basketcounter" + i.name);
+
+  counter.textContent = Number(counter.textContent) + 1;
+
+  let price = document.getElementById("basketprice" + i.name);
+
+  price.textContent = Number(price.textContent) + Number(i.price);
+
+  console.log(i.name); 
+  console.log(i.price);
+  console.log(price);
+  console.log(counter);
+}
+
