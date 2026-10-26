@@ -15,12 +15,12 @@ function addElements(i) {
 
   container.innerHTML += `
 
-  <div class="basket_item">
+  <div class="basket_item" id="basket_item${i.name}">
 
   <div class="test" id="basketcounter${i.name}">1</div> <div>portion</div> ${i.name} <div>€</div><div class="test" id="basketprice${i.name}">${i.price}</div>
    
 
-  <button onclick='buttonAdd(${JSON.stringify(i)})'>+1</button><button>DUMP</button>
+  <button onclick='buttonAdd(${JSON.stringify(i)})'>+1</button><button onclick='deleteDish(${JSON.stringify(i)})'>DUMP</button>
   </div>
   `;
 }
@@ -49,10 +49,24 @@ function buttonAdd(i) {
   let price = document.getElementById("basketprice" + i.name);
 
   price.textContent = Number(price.textContent) + Number(i.price);
-
-  console.log(i.name); 
-  console.log(i.price);
-  console.log(price);
-  console.log(counter);
 }
 
+function deleteDish(i) {
+  removeFromBasket(i);
+
+  let button = document.getElementById("addButton" + i.name);
+
+  console.log(button);
+
+  button.innerHTML = `
+  `;
+  button.innerHTML += ` Add to Basket
+  `;
+  button.disabled = false;
+}
+
+function removeFromBasket(i) {
+  let deletableItem = document.getElementById("basket_item" + i.name);
+
+  deletableItem.remove();
+}
